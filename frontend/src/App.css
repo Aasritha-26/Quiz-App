@@ -1,0 +1,139 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #111938;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+}
+
+.app {
+  max-width: 600px;
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #2d2d2d;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: "Josefin Sans";
+}
+
+.question-card {
+  margin-bottom: 30px;
+}
+
+.question-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.start-screen {
+  text-align: center;
+  padding: 50px;
+}
+
+.start-screen h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+Category Dropdown Styling
+label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+select#category {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #b19cd9;
+  border-radius: 8px;
+  background-color: #9c86cc;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  margin: 10px auto 30px;
+  display: block;
+}
+
+select#category:hover,
+select#category:focus {
+  background-color: #9c86cc;
+}
+
+/* Option styling (best-effort) */
+select#category option {
+  padding: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #b19cd9;
+  border: none;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(177, 156, 217, 0.4);
+}
+
+.start-button:hover {
+  background-color: #9c86cc;
+  transform: translateY(-2px);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #b19cd9;
+  border-radius: 8px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9c86cc;
+}
+
+.result {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
