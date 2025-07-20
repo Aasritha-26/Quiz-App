@@ -42,22 +42,27 @@ A full-stack quiz application where users can log in, select quiz categories lik
 4. **Configure Environment**
 
 Create a .env file inside the backend/ directory with the following:
-  ```bash
+
   MONGODB_URI=your_mongodb_atlas_connection_string
+  
   PORT=5000
 
 ## Running the App
 
 **Start Backend Server**
-```bash
+
 cd backend
+
 npm run dev
+
 Server runs on http://localhost:5000
 
 **Start Frontend**
-```bash
+
 cd ../frontend
+
 npm run dev
+
 App opens in your browser at http://localhost:3000
 
 ## 📂 Project Structure
