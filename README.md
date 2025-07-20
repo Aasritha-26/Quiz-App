@@ -15,7 +15,7 @@ A full-stack quiz application where users can log in, select quiz categories lik
 - **Frontend** : React.js, CSS
 - **Backend** : Node.js, Express.js
 - **Database** : MongoDB Atlas with Mongoose
-- **Deployment**: Coming soon (Render/Netlify)
+- **Deployment**: https://quiz-app-mr7d.vercel.app/
   
 ## ⚙️ How It Works
 - Select a quiz category: History, Aptitude, Technology, or General
