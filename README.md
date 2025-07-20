@@ -1,65 +1,81 @@
-🧠 MERN Stack Quiz App
+## 🧠 MERN Stack Quiz App
+
 A full-stack quiz application where users can log in, select quiz categories like History, Aptitude, Technology, and General, attempt quizzes, and view their scores. Built using the MERN Stack: MongoDB Atlas, Express.js, React.js (with Vite), and Node.js.
 
-**Features**
+## 🚀 Features
+- Select from 4 quiz categories: History, Aptitude, Technology, General
+- Quiz includes navigation: Next, Previous, and Submit
+- Immediate score display after quiz submission
+- Selected answers are highlighted
+- Highest score tracking per user
+- Questions stored and fetched from MongoDB Atlas
+- Fully responsive design using CSS
 
-Select from 4 quiz categories: History, Aptitude, Technology, General
-
-Quiz includes navigation: Next, Previous, and Submit
-
-Immediate score display after quiz submission
-
-Selected answers are highlighted
-
-Highest score tracking per user
-
-Questions stored and fetched from MongoDB Atlas
-
-Fully responsive design using CSS
-
-**Technologies Used**
-Frontend: React.js, CSS
-
-Backend: Node.js, Express.js
-
-Database: MongoDB Atlas with Mongoose
-
-Authentication: Basic login (registration coming soon)
-
-Deployment: Coming soon (optional Render/Netlify)
-
-**Project Structure**
-
-/client         → React frontend (Vite)
-
-/server         → Express backend
-
-  └── routes/   → API routes (quiz, auth, score)
+## 🛠️ Technologies Used
+- **Frontend** : React.js, CSS
+- **Backend** : Node.js, Express.js
+- **Database** : MongoDB Atlas with Mongoose
+- **Deployment**: Coming soon (Render/Netlify)
   
-  └── models/   → Mongoose schemas (Question, Score)
-  
-  └── seed.js   → Script to populate MongoDB with quiz questions
-  
+## ⚙️ How It Works
+- Select a quiz category: History, Aptitude, Technology, or General
+- Questions are fetched from MongoDB Atlas
+- Users can navigate with Next and Previous buttons
+- After clicking Submit, total score is calculated and displayed
+- Selected answers remain highlighted for review
 
-**How It Works**
-Selects a quiz category (History, Aptitude, General, Technology)
+## 🔧 Installation
+1. **Clone the Repository**
+     ```bash
+        git clone https://github.com/Aasritha-26/Quiz-app.git
+        cd Quiz-app
+2. **Set Up Backend**
 
-Quiz questions load from MongoDB Atlas
+    cd backend
+    npm install
+   
+3. **Set Up Frontend**
 
-Navigation buttons allow users to go back and forth between questions
+    cd ../frontend
+    npm install
+   
+4. **Configure Environment**
 
-After submitting, the total score is calculated and displayed
+Create a .env file inside the backend/ directory with the following:
 
-**Setup Instructions (Local Development)**
-🔧 Backend Setup
-cd server
-npm install
+MONGODB_URI=your_mongodb_atlas_connection_string
+PORT=5000
+
+## Running the App
+
+**Start Backend Server**
+
+cd backend
 npm run dev
-Create a .env file inside server/:
+Server runs on http://localhost:5000
 
+**Start Frontend**
 
-🔧 Frontend Setup
-
-cd client
-npm install
+cd ../frontend
 npm run dev
+App opens in your browser at http://localhost:3000
+
+## 📂 Project Structure
+```
+Quiz-app/
+├── backend/                # Backend code
+│   ├── routes/            # API routes (quiz, auth, score)
+│   ├── models/            # Mongoose models (Question, Score)
+│   ├── seed.js            # Quiz data population script
+│   ├── server.js          # Express server entry
+│   └── .env               # Environment variables
+│
+├── frontend/                # Frontend (React)
+│   ├── src/               # React components, pages, utils
+│   ├── public/            # Static assets
+│   └── package.json
+│
+└── README.md              # Project documentation
+
+
+
